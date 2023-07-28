@@ -24,9 +24,9 @@ function onTextareaInput(evt) {
 
 function handleSubmit(evt) {
   evt.preventDefault();
+  evt.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
-    evt.currentTarget.reset();
-    console.log(formData);
+  console.log(formData);
 }
 
 function populateTextarea() {
